@@ -16,7 +16,10 @@ let players = {};
 app.use(session({
   secret: 'ldjaisudnjdkalnasdfwpienlakjs',
   resave: false, //required
-  saveUninitialized: false //required
+  saveUninitialized: false, //required
+  cookie: {
+    sameSite: "none",
+  },
 }));
 
 if(process.env.NODE_ENV === "production") {
