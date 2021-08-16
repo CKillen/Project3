@@ -9,7 +9,7 @@ export const Form = ({ onSubmit, formBtntext, loginSignupState }) => {
         <input 
           className="form-control usernameBox" 
           id="name" 
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{3,10}$"
+          pattern="^{3,10}$"
         />
       </div>
       <div className="form-group passwordTitle">
@@ -19,7 +19,7 @@ export const Form = ({ onSubmit, formBtntext, loginSignupState }) => {
           className="form-control passwordBox"
           id="password"
           placeholder=""
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,24}$"
+          pattern="^(?=.*[a-z])(?=.*[A-Z]).{6,24}$"
         />
       </div>
       <div className="form-group">
